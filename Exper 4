@@ -1,0 +1,39 @@
+220 sjcet-H81M-H-M-2 ESMTP Postfix (Ubuntu)
+EHLO localhost
+250-sjcet-H81M-H-M-2
+250-PIPELINING
+250-SIZE 10240000
+250-VRFY
+250-ETRN
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250-SMTPUTF8
+250 CHUNKING
+MAIL FROM:<sender@example.com>
+250 2.1.0 Ok
+RCPT TO:<receiver@example.com>
+250 2.1.5 Ok
+DATA
+354 End data with <CR><LF>.<CR><LF>
+From:sender@example.com
+To:receiver@example.com
+Subject:Test
+
+Hello from SMTP!
+
+
+
+Type:
+
+End
+
+QUIT
+
+
+
+.
+250 2.0.0 Ok: queued as F2C5A20309C
+QUIT
+221 2.0.0 Bye
